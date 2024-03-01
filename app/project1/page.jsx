@@ -2,37 +2,10 @@
 import React, { useState, useEffect } from "react";
 import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue } from "@nextui-org/react";
-import { Image } from "@nextui-org/react";
-import { Code } from "@nextui-org/code"
+ 
 
 
-const rows = [
-	{
-		key: "date",
-		date: "Tony Reichert",
-		role: "CEO",
-		status: "Active",
-	},
-	{
-		key: "2",
-		date: "Zoey Lang",
-		role: "Technical Lead",
-		status: "Paused",
-	},
-	{
-		key: "3",
-		date: "Jane Fisher",
-		role: "Senior Developer",
-		status: "Active",
-	},
-	{
-		key: "4",
-		date: "William Howard",
-		role: "Community Manager",
-		status: "Vacation",
-	},
-];
-
+ 
 const columns_chats = [
 	{
 		key: "date",
@@ -94,27 +67,10 @@ const columns_response_time = [
 		label: "RESPONSE TIME",
 	},
 ];
-const columns_tags = [
-	{
-		key: "date",
-		label: "DATE",
-	},
-	{
-		key: "tags",
-		label: "TAGS",
-	}
-];
+ 
 
 
-const getData = async (uri: string) => {
-	const res = await fetch(uri)
-
-	if (!res.ok) {
-		throw new Error('Failed to fetch data')
-	}
-
-	return res.json()
-}
+ 
 
 
 
